@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/brand-icons";
 import { site } from "@/lib/site";
 
 export function Footer() {
@@ -22,7 +22,7 @@ export function Footer() {
               className="text-zinc-500 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors"
               aria-label="GitHub"
             >
-              <Github className="h-5 w-5" aria-hidden="true" />
+              <GithubIcon className="h-5 w-5" aria-hidden="true" />
             </a>
             <a
               href={site.linkedin}
@@ -31,7 +31,7 @@ export function Footer() {
               className="text-zinc-500 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors"
               aria-label="LinkedIn"
             >
-              <Linkedin className="h-5 w-5" aria-hidden="true" />
+              <LinkedinIcon className="h-5 w-5" aria-hidden="true" />
             </a>
             <a
               href={site.twitter}
@@ -40,7 +40,7 @@ export function Footer() {
               className="text-zinc-500 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors"
               aria-label="X (Twitter)"
             >
-              <Twitter className="h-5 w-5" aria-hidden="true" />
+              <TwitterIcon className="h-5 w-5" aria-hidden="true" />
             </a>
             <a
               href={`mailto:${site.email}`}

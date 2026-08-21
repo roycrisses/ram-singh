@@ -1,6 +1,6 @@
 "use client";
 
-import { Code2, Server, Database, Layers } from "lucide-react";
+import { Code2, Server, Database } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 const categories = [

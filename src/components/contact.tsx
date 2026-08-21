@@ -4,7 +4,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, Github, Linkedin, Twitter, Copy, Check } from "lucide-react";
+import { Mail, Copy, Check } from "lucide-react";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/brand-icons";
 import { Reveal } from "@/components/reveal";
 import { site } from "@/lib/site";
 
@@ -13,7 +14,7 @@ const contactSchema = z.object({
   email: z.string().trim().email("Please enter a valid email"),
   subject: z.string().trim().min(2, "Subject must be at least 2 characters"),
   message: z.string().trim().min(10, "Message must be at least 10 characters"),
-  honeypot: z.string().max(0).optional(),
+  honeypot: z.string().optional(),
 });
 
 type ContactValues = z.infer<typeof contactSchema>;
@@ -227,7 +228,7 @@ export function Contact() {
 
                 <div className="flex items-center gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                    <Github className="h-5 w-5" aria-hidden="true" />
+                    <GithubIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400">GitHub</p>
@@ -239,7 +240,7 @@ export function Contact() {
 
                 <div className="flex items-center gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                    <Linkedin className="h-5 w-5" aria-hidden="true" />
+                    <LinkedinIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400">LinkedIn</p>
@@ -251,7 +252,7 @@ export function Contact() {
 
                 <div className="flex items-center gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
-                    <Twitter className="h-5 w-5" aria-hidden="true" />
+                    <TwitterIcon className="h-5 w-5" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400">X (Twitter)</p>

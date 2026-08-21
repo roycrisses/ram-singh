@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { GithubIcon } from "@/components/brand-icons";
+import { site } from "@/lib/site";
 import { Reveal } from "@/components/reveal";
 import { projects } from "@/data/projects";
 
@@ -70,7 +71,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
               className="flex items-center gap-1.5 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors"
               aria-label={`View source code of ${project.title}`}
             >
-              <Github className="h-4 w-4" aria-hidden="true" />
+              <GithubIcon className="h-4 w-4" aria-hidden="true" />
               Source
             </a>
           </div>

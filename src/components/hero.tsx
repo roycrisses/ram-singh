@@ -75,15 +75,15 @@ export function Hero({ stats }: HeroProps) {
             <a href={`mailto:${site.email}`} className="hover:text-accent transition-colors">{site.email}</a>
           </div>
           <div className="flex items-center gap-2">
-            <Github className="h-4 w-4" aria-hidden="true" />
+            <GithubIcon className="h-4 w-4" aria-hidden="true" />
             <a href={site.github} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">GitHub</a>
           </div>
           <div className="flex items-center gap-2">
-            <Linkedin className="h-4 w-4" aria-hidden="true" />
+            <LinkedinIcon className="h-4 w-4" aria-hidden="true" />
             <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">LinkedIn</a>
           </div>
           <div className="flex items-center gap-2">
-            <Twitter className="h-4 w-4" aria-hidden="true" />
+            <TwitterIcon className="h-4 w-4" aria-hidden="true" />
             <a href={site.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">X</a>
           </div>
         </Reveal>

@@ -5,6 +5,12 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --color-bg: var(--color-bg);
+  --color-fg: var(--color-fg);
 }
 
 :root {
