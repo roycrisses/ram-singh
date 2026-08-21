@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowRight, Download, Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/brand-icons";
 import { Reveal } from "@/components/reveal";
 import { site } from "@/lib/site";
 
